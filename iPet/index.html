@@ -8,28 +8,30 @@
 </head>
 
 <body>
+
 	<div id="inicio">
-	
 	
 	<header id="cabecalho">		
 		<img src="imagem/logo-ipet.png">
 		<nav id="botoes">
 		
 		<ul type="disc">
-			<li href="index.html" class="linkum">ENTRAR</li> 
-			<li href="index.html" class="linkum">CADASTRAR-SE</li> 
+			<li class="linkum"><a href="entrar.html">ENTRAR</a></li>
+			<li class="linkum"><a href="cadastrar.html">CADASTRAR-SE</a></li>
 		</ul>
 		</nav>
 	
 	
 	<div id="menubar">
+
 	<menu id="menu">	
+
 		<ul type="disc">
 			<li class="linkdois"><a href="index.html">ADOTAR</a></li> 
-			<li class="linkdois"><a href="index.html">DOAR</a></li> 
-			<li class="linkdois"><a href="index.html">EVENTOS</a></li> 
-			<li class="linkdois"><a href="index.html">DENUNCIA</a></li>
-			<li class="linkdois"><a href="index.html">PATROCINADOR</a></li> 
+			<li class="linkdois"><a href="doar.html">DOAR</a></li> 
+			<li class="linkdois"><a href="eventos.html">EVENTOS</a></li> 
+			<li class="linkdois"><a href="denuncia.html">DENUNCIA</a></li>
+			<li class="linkdois"><a href="patrocinador.html">PATROCINADOR</a></li> 
 		</ul>
 	</menu>	
 	
@@ -41,26 +43,97 @@
 	
 	
 	<div id="conteudo">
-	<aside class="barraEsquerda">
-	<div id="principal2">
-	<form action="">
-    <input class="Busca-texto" type="text">
-	</form>
-	</div>
-	</aside>
+		<aside class="barraEsquerda">
+			<div id="principal2">
+				<form action="">
+			<div id="divBusca">
+				<img src="imagem/pesquisa.png" id="btnBusca" alt="Buscar"/>
+  				<input type="text" id="txtBusca" placeholder="Buscar..."/>
+			</div>
+
+			<div class="listaBox">
+					
+				<h1 class="titulo1">ANIMAL</h1>
+
+				<ul>
+					<li class="check">
+						<label class="container"><h2 class="tiluto2">GATO</h2>
+							<input type="checkbox"/>
+							<span class="checkmark"></span>
+						</label>
+					</li>
+					<li class="check">
+						<label class="container"><h2 class="tiluto2">CAHORRO</h2>
+							<input type="checkbox"/>
+							<span class="checkmark"></span>
+						</label>
+					</li>
+				</ul>
+
+				<h1 class="titulo1">COR</h1>
+
+				<ul>
+					<li class="check">
+						<label class="container"><h2 class="tiluto2">PRETO</h2>
+							<input type="checkbox"/>
+							<span class="checkmark"></span>
+						</label>
+					</li>
+					<li class="check">
+						<label class="container"><h2 class="tiluto2">BRANCO</h2>
+							<input type="checkbox"/>
+							<span class="checkmark"></span>
+						</label>
+					</li>
+					<li class="check">
+						<label class="container"><h2 class="tiluto2">CINZA</h2>
+							<input type="checkbox"/>
+							<span class="checkmark"></span>
+						</label>
+					</li>
+					<li class="check">
+						<label class="container"><h2 class="tiluto2">MARROM</h2>
+							<input type="checkbox"/>
+							<span class="checkmark"></span>
+						</label>
+					</li>
+				</ul>
+
+				<h1 class="titulo1">LOCALIZAÇÃO</h1>
+			</div>
+
+				</form>
+			</div>
+		</aside>
 	
 	<aside class="areaDireita">
+		<div id="scroll">
 		<article id="conteudo">
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-	Why do we use it?
-	It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
+			
+			<div class="infoBlocos">
+				<img src="imagem/gato.jpg">
+				<ul>
+					<li class="infoLista">
+						<h2 class="infoLista2">NOME: Zayn</h2>
+					</li>
+					<li class="infoLista">
+						<h2 class="infoLista2">IDADE: 1 ano</h2>
+					</li>
+					<li class="infoLista">
+						<h2 class="infoLista2">COR: Marrom</h2>
+					</li>
+					<li class="infoLista">
+						<h2 class="infoLista2">LOCALIZAÇÃO: Centro</h2>
+					</li>
+				</ul>
+			</div>
 
 		</article>
+		</div>
 	</aside>
 	</div>
-	<footer id="rodape"> 
-	</footer>
+
+	<footer id="rodape"> </footer>
+
 </body>
 </html>
