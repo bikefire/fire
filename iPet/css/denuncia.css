@@ -13,8 +13,14 @@ body {
 
 header#cabecalho{
 	background-image: linear-gradient(to right, #D2691E, #CD853F);
-	height:16%;
+	height:100%;
 	margin-bottom: 0px;
+}
+
+#inicio {
+	height: 16%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 nav#botoes{
@@ -29,19 +35,31 @@ nav#botoes li{
 	padding: 10px;
 	border-radius: 10px;
 }
-
+#menubar {
+	margin-top: 0px;
+	padding-top: 0px;
+	z-index: 1;
+	position: sticky;
+	top:0;
+}
 menu#menu{
+	padding: 0px;
 	background-image: linear-gradient(to right, #D2691E, #CD853F);
 	margin-top: 0px;
 	margin-bottom: 0px;
+	margin-left: 0px;
 }
 
 menu#menu ul{
-	text-align: left;
+	padding-left: 0px;
+	margin-top: 0px;
+	text-align: center;
+	margin-left: 0px;
 }
 
 menu#menu li{
-	text-align: left;
+	margin-top: 0px;
+	text-align: center;
 	font-weight: bold;
 	display: inline-block;
 	background-image: linear-gradient(to right, #CD853F, #D2691E);
@@ -60,20 +78,3 @@ div#conteudo{
 	height: 73%;
 }
 
-footer#rodape{
-	height: 6%;
-	margin-top: 0px;
-	background-image: linear-gradient(to right, #D2691E, #CD853F);
-	width: 100%;
-	display: block;
-	position: fixed;
-	float: right;
-}
-
-#scroll {
-	width: auto;
-    height: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
