@@ -23,13 +23,17 @@ header#cabecalho{
 	padding-bottom: 0px;
 }
 
-nav#botoes{
+.botoes{
 	float: right;
 	padding-right: 20px;
 	padding-top: 10px;
 }
 
-nav#botoes li{
+div#login .botoes{
+	
+}
+.botoes li{
+	font-weight: bold;
 	display: inline-block;
 	background-image: linear-gradient(to right, #CD853F, #D2691E);
 	padding: 10px;
