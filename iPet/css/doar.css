@@ -1,4 +1,4 @@
-html{
+html {
 	height: 100%;
 	margin: 0px;
 }
@@ -11,38 +11,73 @@ body {
 	font: 16px Arial, Helvetica, sans-serif;
 }
 
-header#cabecalho{
-	background-image: linear-gradient(to right, #D2691E, #CD853F);
-	height:100%;
-	margin-bottom: 0px;
-}
+/*     
+--------------------------------------------------------
+				INICIO CABEÇALHO  
+--------------------------------------------------------
+*/
 
 #inicio {
 	height: 16%;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	display: block;
 }
 
-nav#botoes{
+#cabecalho {
+	background: linear-gradient(to right, #D2691E, #CD853F);
+	height:100%;
+	margin-bottom: 0px;
+}
+
+#botoes {
 	float: right;
 	padding-right: 20px;
 	padding-top: 10px;
 }
 
-nav#botoes li{
+#botoes li {
 	display: inline-block;
 	background-image: linear-gradient(to right, #CD853F, #D2691E);
 	padding: 10px;
 	border-radius: 10px;
 }
+
+/*     
+--------------------------------------------------------
+				FIM CABEÇALHO  
+--------------------------------------------------------
+*/
+
+
+
+/* FORMATAÇÃO DOS LINKS */
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+/* FORMATAÇÃO DOS LINKS */
+
+
+
+/*     
+--------------------------------------------------------
+				INICIO MENU BAR   
+--------------------------------------------------------
+*/
+
+#tudo{
+	position: sticky;
+	top:0;
+	z-index: 1;
+}
+
 #menubar {
 	margin-top: 0px;
 	padding-top: 0px;
-	z-index: 1;
-	position: sticky;
-	top:0;
 }
-menu#menu{
+
+#menu{
 	padding: 0px;
 	background-image: linear-gradient(to right, #D2691E, #CD853F);
 	margin-top: 0px;
@@ -50,14 +85,7 @@ menu#menu{
 	margin-left: 0px;
 }
 
-menu#menu ul{
-	padding-left: 0px;
-	margin-top: 0px;
-	text-align: center;
-	margin-left: 0px;
-}
-
-menu#menu li{
+#menu li{
 	margin-top: 0px;
 	text-align: center;
 	font-weight: bold;
@@ -69,81 +97,81 @@ menu#menu li{
 	padding-right: 6.682%;
 }
 
-a {
-	text-decoration: none;
-	color: #ffffff;
-}
-
-div#conteudo{
-	height: 73%;
-}
-
-footer#rodape{
-	height: 6%;
+#menu ul{
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 	margin-top: 0px;
-	background-image: linear-gradient(to right, #D2691E, #CD853F);
-	width: 100%;
-	display: block;
-	position: fixed;
-	float: right;
-}
-
-#scroll {
-	width: auto;
-    height: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.areaMeio{
-	width: auto;
-	height: 99%;
-}
-
-#conteudo2 {
-	width: auto;
-	height: auto;
-	margin: 0;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) 
-}
-
-#conteudo2 img {
-	border: 5px solid black;
-	border-radius: 20px;
-	float: left;
-}
-
-.TextoLink {
-	display: inline-block;
-}
-.l1 {
-	background: #fff;
-	border: 3px solid black;
-	border-radius: 5px;
-	margin-left: 20px;
 	text-align: center;
-	padding-left: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 5px;
+	margin-left: 0px;
 }
 
-.p2 {
+/*     
+--------------------------------------------------------
+				FIM MENU BAR   
+--------------------------------------------------------
+*/
+
+
+/*     
+--------------------------------------------------------
+				INICIO AREA MEIO  
+--------------------------------------------------------
+*/
+
+#tudoAreaMeio {
+	display: block;
+}
+
+#areaMeio {
+	width: 99.8%;
+	height: auto;
+	position: absolute;
+	display: block;
+}
+
+#conteudoDoMeio {
+	display: inline-block;
+	width: 47%;
+	height: 57%;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-left: 35px;
+}
+
+#conteudoDoMeio img {
+	width: 15%;
+	border: 5px solid black;
+	border-radius: 5px;
+	background: #fff;
+	display: block;
+	margin-left: 260px;
+}
+
+.paragrafo {
+	display: inline-block;
 	border: 3px solid black;
 	border-radius: 5px;
 	background: #fff;
-	margin-left: 20px;
 	white-space: pre-line;
 	text-align: center;
 	padding-left: 5px;
+	padding-bottom: 15px;
+	padding-right: 5px;
+	margin-top: 3px;
+}
+
+.link {
+	background: #fff;
+	border: 3px solid black;
+	border-radius: 5px;
+	text-align: center;
+	padding-left: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-right: 5px;
+	display: block;
+	margin-top: -13px;
 }
 
 .vak {
@@ -151,5 +179,8 @@ footer#rodape{
 	text-decoration: underline;
 }
 
-
-
+/*     
+--------------------------------------------------------
+				FIM AREA MEIO  
+--------------------------------------------------------
+*/

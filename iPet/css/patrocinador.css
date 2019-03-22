@@ -1,5 +1,5 @@
-html{
-	height: 100%;
+html {
+	height: auto;
 	margin: 0px;
 }
 
@@ -11,38 +11,73 @@ body {
 	font: 16px Arial, Helvetica, sans-serif;
 }
 
-header#cabecalho{
-	background-image: linear-gradient(to right, #D2691E, #CD853F);
-	height:100%;
-	margin-bottom: 0px;
-}
+/*     
+--------------------------------------------------------
+				INICIO CABEÇALHO  
+--------------------------------------------------------
+*/
 
 #inicio {
 	height: 16%;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	display: block;
 }
 
-nav#botoes{
+#cabecalho {
+	background-image: linear-gradient(to right, #D2691E, #CD853F);
+	height:100%;
+	margin-bottom: 0px;
+}
+
+#botoes {
 	float: right;
 	padding-right: 20px;
 	padding-top: 10px;
 }
 
-nav#botoes li{
+#botoes li {
 	display: inline-block;
 	background-image: linear-gradient(to right, #CD853F, #D2691E);
 	padding: 10px;
 	border-radius: 10px;
 }
+
+/*     
+--------------------------------------------------------
+				FIM CABEÇALHO  
+--------------------------------------------------------
+*/
+
+
+
+/* FORMATAÇÃO DOS LINKS */
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+/* FORMATAÇÃO DOS LINKS */
+
+
+
+/*     
+--------------------------------------------------------
+				INICIO MENU BAR   
+--------------------------------------------------------
+*/
+
+#tudo{
+	position: sticky;
+	top:0;
+	z-index: 1;
+}
+
 #menubar {
 	margin-top: 0px;
 	padding-top: 0px;
-	z-index: 1;
-	position: sticky;
-	top:0;
 }
-menu#menu{
+
+#menu{
 	padding: 0px;
 	background-image: linear-gradient(to right, #D2691E, #CD853F);
 	margin-top: 0px;
@@ -50,14 +85,7 @@ menu#menu{
 	margin-left: 0px;
 }
 
-menu#menu ul{
-	padding-left: 0px;
-	margin-top: 0px;
-	text-align: center;
-	margin-left: 0px;
-}
-
-menu#menu li{
+#menu li{
 	margin-top: 0px;
 	text-align: center;
 	font-weight: bold;
@@ -69,11 +97,32 @@ menu#menu li{
 	padding-right: 6.682%;
 }
 
-a {
-	text-decoration: none;
-	color: #ffffff;
+#menu ul{
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-align: center;
+	margin-left: 0px;
 }
 
-div#conteudo{
-	height: 73%;
-}
+/*     
+--------------------------------------------------------
+				FIM MENU BAR   
+--------------------------------------------------------
+*/
+
+
+/*     
+--------------------------------------------------------
+				INICIO AREA MEIO  
+--------------------------------------------------------
+*/
+
+
+
+/*     
+--------------------------------------------------------
+				FIM AREA MEIO  
+--------------------------------------------------------
+*/

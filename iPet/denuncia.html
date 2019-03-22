@@ -2,66 +2,114 @@
 <html>
 <head>
 	<title>Denuncia</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/denuncia.css">
-	<link rel="stylesheet" type="text/css" href="css/JanelaModal.css">
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" type="text/css" href="css/denuncia.css">
 </head>
 <body>
 
-	<div id="bg"></div>
-		<div class="box">
-			<div id="login">
-			<img src="imagem/logo-ipet.png">
-			<p>NOME:<p>
-			<input class="Busca-texto" type="text"><br>
-			<p>SENHA:<p>
-			<input class="Busca-texto" type="text">
-			<nav class="botoes">
-				<ul type="disc">
-					<li class="linkum"><a href="#bg">ENTRAR</a></li>
-					<li class="linkum"><a href="cadastrar.html">FECHAR</a></li>
-				</ul>
-			</nav>	
-			</div>
-		</div>
-	</div>
+	 <!-- 
+	 	--------------------------------------------------------
+						CABEÇALHO - INICIO 
+		--------------------------------------------------------
+	 -->
 	<div id="inicio">
-	<header id="cabecalho">		
-		<img src="imagem/logo-ipet.png">
-		<nav class="botoes">
-		<ul type="disc">
-			<li class="linkum"><a href="#bg">ENTRAR</a></li>
-			<li class="linkum"><a href="cadastrar.html">CADASTRAR-SE</a></li>
-		</ul>
-		</nav>	
-	
-	</header>
+		<header id="cabecalho">		
+			<img src="imagem/logo-ipet.png">
+				<nav id="botoes">
+					<ul type="disc">
+						<li><a href="entrar.html">ENTRAR</a></li>
+						<li><a href="cadastrar.html">CADASTRAR-SE</a></li>
+					</ul>
+				</nav>	
+		</header>
 	</div>
-	
-	<div id="menubar">
-	<menu id="menu">	
-		<ul type="disc">
-			<li class="linkdois"><a href="index.html">ADOTAR</a></li> 
-			<li class="linkdois"><a href="doar.html">DOAR</a></li> 
-			<li class="linkdois"><a href="eventos.html">EVENTOS</a></li> 
-			<li class="linkdois"><a href="denuncia.html">DENUNCIA</a></li>
-			<li class="linkdois"><a href="patrocinador.html">PATROCINADOR</a></li> 
-		</ul>
-	</menu>	
+	 <!-- 
+	 	--------------------------------------------------------
+						CABEÇALHO - FIM 
+		--------------------------------------------------------
+	 -->
+
+
+	 <!-- 
+	 	--------------------------------------------------------
+						MENU BAR - INICIO 
+		--------------------------------------------------------
+	 -->
+	<div id="tudo">
+		<div id="menubar">
+			<menu id="menu">	
+				<ul type="disc">
+					<li><a href="index.html">ADOTAR</a></li> 
+					<li><a href="doar.html">DOAR</a></li> 
+					<li><a href="eventos.html">EVENTOS</a></li> 
+					<li><a href="denuncia.html">DENUNCIA</a></li>
+					<li><a href="patrocinador.html">PATROCINADOR</a></li> 
+				</ul>
+			</menu>	
+		</div>	
 	</div>
+	 <!-- 
+	 	--------------------------------------------------------
+						MENU BAR - FIM 
+		--------------------------------------------------------
+	 -->
 
-		<div id="conteudo">
-			<div id="scroll">
-				<aside class="areaMeio">
-					<article id="conteudo2">
 
-					</article>
-				</aside>
-			</div>
+
+	 <!-- 
+	 	--------------------------------------------------------
+						AREA MEIO - INICIO 
+		--------------------------------------------------------
+	 -->
+
+	<div id="tudoAreaMeio">
+
+			<div class="container">
+  				<form action="/action_page.php">
+  					<div class="row">
+   						 <div class="col-25">
+     						 <label for="fname"><h3>Seu nome:</h3></label>
+    					</div>
+    				
+    					<div class="col-75">
+      					<input type="text" id="fname" name="firstname" placeholder="Seu nome...">
+   						</div>
+  					</div>
+
+ 			 <div class="row">
+   				 <div class="col-25">
+      				<label for="lname"><h3>Email:</h3></label>
+    			</div>
+
+    	<div class="col-75">
+      		<input type="text" id="lname" name="lastname" placeholder="Seu email...">
+    	</div>
+  			</div>
+
+ 	 	<div class="row">
+    		<div class="col-25">
+      			<label for="subject"><h3>Faça sua denuncia:</h3></label>
+    		</div>
+
+   	 	<div class="col-75">
+      		<textarea id="subject" name="subject" placeholder="Escreva algo..." style="height:200px"></textarea>
+   		</div>
+ 		</div>
+
+  		<div class="row">
+    		<input type="submit" value="Enviar">
+  		</div>
+  				</form>
 		</div>
 
-	<footer id="rodape"> </footer>
+	</div>
+
+	 <!-- 
+	 	--------------------------------------------------------
+						AREA MEIO - FIM 
+		--------------------------------------------------------
+	 -->
 
 </body>
 </html>
