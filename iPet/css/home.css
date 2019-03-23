@@ -29,13 +29,13 @@ body {
 	margin-bottom: 0px;
 }
 
-#botoes {
+.botoes {
 	float: right;
 	padding-right: 20px;
 	padding-top: 10px;
 }
 
-#botoes li {
+.botoes li {
 	display: inline-block;
 	background-image: linear-gradient(to right, #CD853F, #D2691E);
 	padding: 10px;

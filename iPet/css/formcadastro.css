@@ -1,0 +1,105 @@
+div#areaForm{
+	padding: 30px;
+}
+p{
+	font-weight: bold;
+}
+
+.info{
+	width:100%;
+	border: 2px solid black;
+	padding: 10px;
+	background-color: rgba(0,0,0,.1);
+}
+
+.endereco{
+	border: 2px solid black;
+	padding-top: 0px;
+	padding:10px;
+	background-color: rgba(0,0,0,.1);
+}
+.formulario input{
+	border-radius: 30px;
+	border: 2px solid black;
+
+}
+.formulario div{
+	display: inline-block;
+	font-weight: bold;
+}
+div#opcaopessoa{
+	background-color: rgba(0,0,0,.1);
+	border: 2px solid black;
+	padding: 3px;
+}
+div#campousuario{
+	width: 30%;
+}
+div#camposenha{
+	width: 30%;
+}
+div#campoemail{
+	width: 39%;
+}
+div#camponome{
+	width: 60%;
+}
+div#campocpf{
+	width: 33%;
+}
+div#campocepfisico{
+	width: 20%;
+}
+div#camporuafisico{
+	width: 60%;
+}
+div#campocomplementofisico{
+	width: 39%;
+}
+div#campobairrofisico{
+	width: 40%;
+}
+div#camponumerofisico{
+	width: 9%;
+}
+div#campocidadefisico{
+	width: 40%;
+}
+div#campoestadofisico{
+	width: 40%;
+}
+div#campocepfisico{
+	width: 20%;
+}
+
+div#camponomefantasia{
+	width: 30%;
+}
+div#campoemailjuridico{
+	width: 30%;
+}
+div#camposenhajuridico{
+	width: 39%;
+}
+div#campocnpj{
+	width: 33%;
+}
+div#camporuajuridico{
+	width: 60%;
+}
+div#campocomplementojuridico{
+	width: 39%;
+}
+div#campobairrojuridico{
+	width: 40%;
+}
+div#camponumerojuridico{
+	width: 9%;
+}
+div#campocidadejuridico{
+	width: 40%;
+}
+div#campoestadojuridico{
+	width: 40%;
+}
+

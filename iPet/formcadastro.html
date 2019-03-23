@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" type="text/css" href="css/denuncia.css">
+				<link rel="stylesheet" type="text/css" href="css/formcadastro.css">
+				<link rel="stylesheet" type="text/css" href="css/JanelaModal.css">
+</head>
+<body>
+<!-- 
+	 	--------------------------------------------------------
+						JANELA FLUTUANTE - FIM 
+		--------------------------------------------------------
+	 -->
+	<div id="bg"></div>
+		<div class="box">
+			<div id="login">
+			<img src="imagem/logo-ipet.png">
+			<p>NOME:<p>
+			<input class="nome-texto" type="text"><br>
+			<p>SENHA:<p>
+			<input class="senha-texto" type="text">
+			<nav class="botoes">
+				<ul type="disc">
+					<li class="linkum"><a href="#bg">ENTRAR</a></li>
+					<li class="linkum"><a href="denuncia.html">FECHAR</a></li>
+				</ul>
+			</nav>	
+			</div>
+		</div>
+	</div>
+	 <!-- 
+	 	--------------------------------------------------------
+						JANELA FLUTUANTE - FIM
+		--------------------------------------------------------
+	 -->
+	 <!-- 
+	 	--------------------------------------------------------
+						CABEÇALHO - INICIO 
+		--------------------------------------------------------
+	 -->
+	<div id="inicio">
+		<header id="cabecalho">		
+			<img src="imagem/logo-ipet.png">
+				<nav class="botoes">
+					<ul type="disc">
+						<li><a href="#bg">ENTRAR</a></li>
+						<li><a href="cadastrar.html">CADASTRAR-SE</a></li>
+					</ul>
+				</nav>	
+		</header>
+	</div>
+	 <!-- 
+	 	--------------------------------------------------------
+						CABEÇALHO - FIM 
+		--------------------------------------------------------
+	 -->
+
+
+	 <!-- 
+	 	--------------------------------------------------------
+						MENU BAR - INICIO 
+		--------------------------------------------------------
+	 -->
+	<div id="tudo">
+		<div id="menubar">
+			<menu id="menu">	
+				<ul type="disc">
+					<li><a href="index.html">ADOTAR</a></li> 
+					<li><a href="doar.html">DOAR</a></li> 
+					<li><a href="eventos.html">EVENTOS</a></li> 
+					<li><a href="denuncia.html">DENUNCIA</a></li>
+					<li><a href="patrocinador.html">PATROCINADOR</a></li> 
+				</ul>
+			</menu>	
+		</div>	
+	</div>
+	 <!-- 
+	 	--------------------------------------------------------
+						MENU BAR - FIM 
+		--------------------------------------------------------
+	 -->
+	 <!-- 
+	 	--------------------------------------------------------
+						FORMS - INICIO 
+		--------------------------------------------------------
+	 -->
+	<div id="areaForm"> 
+		<div class="formulario">
+			<div id="opcaopessoa">
+				Pessoa Física: <input type="radio" name="radio" value="fisico"> 
+				 Pessoa Jurídica: <input type="radio" name="radio" value="juridico">
+			</div>
+		</div>
+		<!-- 
+			--------------------------------------------------------
+							FORMFISICO - INICIO
+			--------------------------------------------------------
+		 -->
+		<div class="formulario" id="formpessoafisica">
+			<form>
+				<P>INFORMAÇÕES PESSOAIS:<P>
+				<div class="info">
+					<div id="campousuario"> 
+						nome de usuario:
+						<input id="usuario" type="text">
+					</div>
+					<div id="camposenha"> 
+						Senha:
+						<input id="senha" type="text">
+					</div>
+					<div id="campoemail"> 
+						e-mail:
+						<input id="e-mail" type="text">
+					</div>
+					<div id="camponome"> 
+						nome completo:
+						<input id="nome" type="text">
+					</div>
+					<div id="campocpf"> 
+						CPF:
+						<input id="CPF" type="text">
+					</div>
+				</div>
+				<p> ENDEREÇO:<P>
+				<div class="endereco">
+					<div id="campocepfisico"> 
+						CEP:
+						<input id="cep" type="text">
+					</div>
+					<br>
+					<div id="camporuafisico"> 
+						RUA:
+						<input id="rua" type="text">
+					</div>
+					<div id="campocomplementofisico"> 
+						COMPLEMENTO:
+						<input id="complemento" type="text">
+					</div>
+					<div id="campobairrofisico"> 
+						BAIRRO:
+						<input id="bairo" type="text">
+					</div>
+					<div id="camponumerofisico"> 
+						N:
+						<input id="número" type="text">
+					</div>
+					<div id="campocidadefisico"> 
+						CIDADE:
+						<input id="cidade" type="text">
+					</div>
+					<div id="campoestadofisico"> 
+						ESTADO:
+						<input id="estado" type="text">
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- 
+			--------------------------------------------------------
+							FORMFISICO - FIM
+			--------------------------------------------------------
+		 -->
+		<!-- 
+			--------------------------------------------------------
+							FORMJURIDICO - INICIO
+			--------------------------------------------------------
+		 -->
+		<div class="formulario" id="formpessoajuridica">
+			<P>INFORMAÇÕES:<P>
+			<form>
+				<div class="info">
+					<div id="camponomefantasia"> 
+						NOME FANTASIA:
+						<input id="nomefantasia" type="text">
+					</div>
+					<div id="campoemailjuridico"> 
+						E-MAIL:
+						<input id="e-mail" type="text">
+					</div>
+					<div id="camposenhajuridico"> 
+						SENHA:
+						<input id="senha" type="text">
+					</div>
+					<div id="campocnpjjuridico"> 
+						CNPJ:
+						<input id="CNPJ" type="text">
+					</div>
+					<div id="botaodocjuridico"> 
+						IMEI:<br>
+						<input type="file">
+					</div>
+				</div>
+				<p> ENDEREÇO:<P>
+				<div class="endereco">
+					<div id="campocep"> 
+						CEP:
+						<input id="cep" type="text">
+					</div>
+					<br>
+					<div id="camporuajuridico"> 
+						RUA:
+						<input id="rua" type="text">
+					</div>
+					<div id="campocomplementojuridico"> 
+						COMPLEMENTO:
+						<input id="complemento" type="text">
+					</div>
+					<div id="campobairrojuridico"> 
+						BAIRRO:
+						<input id="bairo" type="text">
+					</div>
+					<div id="camponumerojuridico"> 
+						N:
+						<input id="número" type="text">
+					</div>
+					<div id="campocidadejuridico"> 
+						CIDADE:
+						<input id="cidade" type="text">
+					</div>
+					<div id="campoestadojuridico"> 
+						ESTADO:
+						<input id="estado" type="text">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 
+	 	--------------------------------------------------------
+						FORMJURIDICO - FIM
+		--------------------------------------------------------
+	 -->
+	 <!-- 
+	 	--------------------------------------------------------
+						FORMS - FIM
+		--------------------------------------------------------
+	 -->
+</body>
+</html>

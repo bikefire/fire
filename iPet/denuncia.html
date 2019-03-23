@@ -5,9 +5,36 @@
 		<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 				<link rel="stylesheet" type="text/css" href="css/denuncia.css">
+				<link rel="stylesheet" type="text/css" href="css/JanelaModal.css">
 </head>
 <body>
-
+ <!-- 
+	 	--------------------------------------------------------
+						JANELA FLUTUANTE - FIM 
+		--------------------------------------------------------
+	 -->
+	<div id="bg"></div>
+		<div class="box">
+			<div id="login">
+			<img src="imagem/logo-ipet.png">
+			<p>NOME:<p>
+			<input class="nome-texto" type="text"><br>
+			<p>SENHA:<p>
+			<input class="senha-texto" type="text">
+			<nav class="botoes">
+				<ul type="disc">
+					<li class="linkum"><a href="#bg">ENTRAR</a></li>
+					<li class="linkum"><a href="denuncia.html">FECHAR</a></li>
+				</ul>
+			</nav>	
+			</div>
+		</div>
+	</div>
+	 <!-- 
+	 	--------------------------------------------------------
+						JANELA FLUTUANTE - FIM
+		--------------------------------------------------------
+	 -->
 	 <!-- 
 	 	--------------------------------------------------------
 						CABEÇALHO - INICIO 
@@ -16,9 +43,9 @@
 	<div id="inicio">
 		<header id="cabecalho">		
 			<img src="imagem/logo-ipet.png">
-				<nav id="botoes">
+				<nav class="botoes">
 					<ul type="disc">
-						<li><a href="entrar.html">ENTRAR</a></li>
+						<li><a href="#bg">ENTRAR</a></li>
 						<li><a href="cadastrar.html">CADASTRAR-SE</a></li>
 					</ul>
 				</nav>	
