@@ -6,7 +6,8 @@ html {
 body {
 	height: 100%;
 	margin: 0;
-	background: #FDE9DF url("../imagem/fundo2.png") fixed;
+	background: rgba(210, 105, 30, 1);
+	/*background: #FDE9DF url("../imagem/fundo2.png") fixed;*/
 	background-size: 30px;
 	font: 16px Arial, Helvetica, sans-serif;
 }
@@ -119,41 +120,56 @@ a {
 */
 
 #tudoAreaEsquerda {
-	width: 18.5%;
-	height: 100%;
+	width: 56.5%;
+	height: 15%;
 	background-image: linear-gradient(to right, #CD853F, #D2691E);
-	display: block;
-	float: left;
-	position: sticky;
-	top: 0;
+	display: inline-block;
+	margin-left: 19.5%;
 }
 
 .barraEsquerda {
-	width: 18.5%;
-	height: 100%;
-	background-image: linear-gradient(to right, #CD853F, #D2691E);
-	position: fixed;
+	
+}
+
+.block {
+	display: inline-block;
+	margin-left: 55px;
+	margin-top: 15px;
+}
+
+.block1 {
+	display: inline-block;
 	float: left;
+	margin-top: 15px;
+	
 }
 
 .listaBox {	
-	margin-top: 50px;
+	margin-top: 5px;
 	margin-left: 25px;
+	
+}
+.listaBox li{
+	display: inline-block;
+	margin-top: 5px;
 }
 
 .titulo1 {
 	color: #2E2E2E;
 	font-size: 1.2em;
 	margin-left: 5px;
+	display: inline-block;
+	
 }
 
 .tiluto2 {
 	color: #2E2E2E;
 	font-size: 0.8em;
+
 }
 
 .container {
-  display: block;
+  display: inline-block;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
