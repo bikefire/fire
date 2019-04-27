@@ -67,9 +67,11 @@ a {
 */
 
 #tudo{
+	display: block;
+	width: auto;
+	height: auto;
 	position: sticky;
 	top:0;
-	z-index: 1;
 }
 
 #menubar {
@@ -115,19 +117,20 @@ a {
 
 /*     
 --------------------------------------------------------
-				INICIO BARRA ESQUERDA  
+				INICIO BARRA SELEÇÃO 
 --------------------------------------------------------
-*/
 
-#tudoAreaEsquerda {
+
+#tudoAreaSelecao {
 	width: 56.5%;
 	height: 15%;
 	background-image: linear-gradient(to right, #CD853F, #D2691E);
 	display: inline-block;
 	margin-left: 19.5%;
+	border: 1px solid red;
 }
 
-.barraEsquerda {
+.barraSelecao {
 	
 }
 
@@ -227,10 +230,11 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+*/
 
  /*     
 --------------------------------------------------------
-				FIM BARRA ESQUERDA  
+				FIM BARRA SELEÇÃO 
 --------------------------------------------------------
 */
 
@@ -238,19 +242,23 @@ a {
 
  /*     
 --------------------------------------------------------
-				INICIO AREA DIREITA  
+				INICIO AREA PRINCIPAL 
 --------------------------------------------------------
 */
 
-#tudoAreaDireita {
+#tudoAreaPrincipal {
 	height: auto;
+	width: auto;
 	display: block;
 }
 
-.areaDireita {
-	float: right;
-	width: 81.5%;
+.areaPrincipal {
+	width: auto;
 	height: auto;
+	margin-right: 3%; 
+	margin-left: 4%;
+	margin-bottom: 1%;
+	margin-top: 1%;	
 }
 
 .infoBlocos {
@@ -268,17 +276,17 @@ a {
 	display: inline-block;
 	border-radius: 5px;
 	border: 3px solid black;
-	margin-left: 20px;
+	margin-left: 17%;
 }
 
 .textLista {
 	color: #2E2E2E;
 	font-size: 0.8em;
-	text-align: left;
+	text-align: center;
 }
 
  /*     
 --------------------------------------------------------
-				FIM AREA DIREITA  
+				FIM AREA PRINCIPAL 
 --------------------------------------------------------
 */

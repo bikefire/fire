@@ -3,10 +3,17 @@
 <head>
 	<title>Cadastro</title>
 		<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-				<link rel="stylesheet" type="text/css" href="css/denuncia.css">
-				<link rel="stylesheet" type="text/css" href="css/formcadastro.css">
-				<link rel="stylesheet" type="text/css" href="css/JanelaModal.css">
+			<link rel="stylesheet" type="text/css" href="css/denuncia.css">
+			<link rel="stylesheet" type="text/css" href="css/formcadastro.css"> 
+			<link rel="stylesheet" type="text/css" href="css/JanelaModal.css">
+
+			<script type="text/javascript">
+				
+				function validarFisico() {
+
+				}
+
+			</script>
 </head>
 <body>
 <!-- 
@@ -90,7 +97,7 @@
 	<div id="areaForm"> 
 		<div class="formulario">
 			<div id="opcaopessoa">
-				Pessoa Física: <input type="radio" name="radio" value="fisico"> 
+				Pessoa Física: <input  type="radio" name="radio" value="fisico"> 
 				 Pessoa Jurídica: <input type="radio" name="radio" value="juridico">
 			</div>
 		</div>
@@ -100,23 +107,21 @@
 			--------------------------------------------------------
 		 -->
 		<div class="formulario" id="formpessoafisica">
-			<form>
+			<form name="formFisico">
 				<P>INFORMAÇÕES PESSOAIS:<P>
 				<div class="info">
 					<div id="campousuario"> 
-						nome de usuario:
-						<input id="usuario" type="text">
+						NOME DE USUARIO: <input id="usuario" type="text" name="nome">
 					</div>
 					<div id="camposenha"> 
-						Senha:
-						<input id="senha" type="text">
+						SENHA: <input id="senha" type="password" name="senha">
 					</div>
 					<div id="campoemail"> 
-						e-mail:
+						E-MAIL:
 						<input id="e-mail" type="text">
 					</div>
 					<div id="camponome"> 
-						nome completo:
+						NOME COMPLETO:
 						<input id="nome" type="text">
 					</div>
 					<div id="campocpf"> 
@@ -170,7 +175,7 @@
 		 -->
 		<div class="formulario" id="formpessoajuridica">
 			<P>INFORMAÇÕES:<P>
-			<form>
+			<form name="formuser">
 				<div class="info">
 					<div id="camponomefantasia"> 
 						NOME FANTASIA:
@@ -225,6 +230,11 @@
 						<input id="estado" type="text">
 					</div>
 				</div>
+
+				<div >
+					<button>Cadastrar-se</button>
+  				</div>
+
 			</form>
 		</div>
 	</div>
