@@ -1,124 +1,126 @@
-div#areaForm{
-	padding: 30px;
-}
-p{
-	font-weight: bold;
+html {
+	height: 100%;
+	margin: 0;
 }
 
-.info{
-	width:100%;
-	border: 2px solid black;
-	padding: 10px;
-	background-color: rgba(0,0,0,.1);
+body {
+	height: 100%;
+	margin: 0;
+	background: rgba(210, 105, 30, 1);
+	background-size: 30px;
+	font: 16px Arial, Helvetica, sans-serif;
 }
 
-.endereco{
-	border: 2px solid black;
-	padding-top: 0px;
-	padding:10px;
-	background-color: rgba(0,0,0,.1);
-}
-.formulario input{
-	border-radius: 30px;
-	border: 2px solid black;
+/*     
+--------------------------------------------------------
+				INICIO CABEÇALHO  
+--------------------------------------------------------
+*/
 
+#inicio {
+	height: 16%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	display: block;
 }
-.formulario div{
+#cabecalho {
+	background-image: linear-gradient(to right, #D2691E, #CD853F);
+	height: 100%;
+	margin-bottom: 0px;
+}
+
+.botoes {
+	float: right;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+
+.botoes li {
 	display: inline-block;
+	background-image: linear-gradient(to right, #CD853F, #D2691E);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/*     
+--------------------------------------------------------
+				FIM CABEÇALHO  
+--------------------------------------------------------
+*/
+
+
+
+/* FORMATAÇÃO DOS LINKS */
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+/* FORMATAÇÃO DOS LINKS */
+
+
+
+/*     
+--------------------------------------------------------
+				INICIO MENU BAR   
+--------------------------------------------------------
+*/
+
+#tudo{
+	display: block;
+	width: auto;
+	height: auto;
+	position: sticky;
+	top:0;
+}
+
+#menubar {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#menu{
+	padding: 0px;
+	background-image: linear-gradient(to right, #D2691E, #CD853F);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+#menu li{
+	margin-top: 0px;
+	text-align: center;
 	font-weight: bold;
-}
-div#opcaopessoa{
-	background-color: rgba(0,0,0,.1);
-	border: 2px solid black;
-	padding: 3px;
-}
-div#campousuario{
-	width: 30%;
+	display: inline-block;
+	background-image: linear-gradient(to right, #CD853F, #D2691E);
+	padding-bottom:1%;
+	padding-top:1%;
+	padding-left: 6.683%;
+	padding-right: 6.682%;
 }
 
-#senha{
-	width: 100%;
-	padding: 3%;
+#menu ul{
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-align: center;
+	margin-left: 0px;
 }
 
-div#camposenha{
-	width: 30%;
-}
-div#campoemail{
-	width: 39%;
-}
-div#camponome{
-	width: 60%;
-}
-div#campocpf{
-	width: 33%;
-}
-div#campocepfisico{
-	width: 20%;
-}
-div#camporuafisico{
-	width: 60%;
-}
-div#campocomplementofisico{
-	width: 39%;
-}
-div#campobairrofisico{
-	width: 40%;
-}
-div#camponumerofisico{
-	width: 9%;
-}
-div#campocidadefisico{
-	width: 40%;
-}
-div#campoestadofisico{
-	width: 40%;
-}
-div#campocepfisico{
-	width: 20%;
+/*     
+--------------------------------------------------------
+				FIM MENU BAR   
+--------------------------------------------------------
+*/
+
+h2 {
+	text-align: center;
+	margin-top: 5%;
+	color: #fff;
 }
 
-div#camponomefantasia{
-	width: 30%;
-}
-div#campoemailjuridico{
-	width: 30%;
-}
-div#camposenhajuridico{
-	width: 39%;
-}
-div#campocnpj{
-	width: 33%;
-}
-div#camporuajuridico{
-	width: 60%;
-}
-div#campocomplementojuridico{
-	width: 39%;
-}
-div#campobairrojuridico{
-	width: 40%;
-}
-div#camponumerojuridico{
-	width: 9%;
-}
-div#campocidadejuridico{
-	width: 40%;
-}
-div#campoestadojuridico{
-	width: 40%;
-}
+.elemento:before {content: '\201C';}
 
-button {
-  background: rgba(210, 105, 30, 1);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 20px;
+.pFJ {
+	text-align: center;
 }

@@ -114,53 +114,73 @@ a {
 */
 
 
- /*     
---------------------------------------------------------
-				INICIO AREA PRINCIPAL 
---------------------------------------------------------
-*/
-
-#tudoAreaPrincipal {
-	height: auto;
-	width: auto;
-	display: block;
+p{
+	margin-top: 15px;
+	font-weight: bold;
 }
 
-.areaPrincipal {
-	width: auto;
-	height: auto;
-	margin-right: 3%; 
-	margin-left: 4%;
-	margin-bottom: 1%;
-	margin-top: 1%;	
+.info{
+	width: 98.2%;
+	border: 2px solid black;
+	padding: 10px;
+	background-color: rgba(0,0,0,.1);
 }
 
-.infoBlocos {
-	width: 20%;
-	height: auto;
-	margin-left: 25px;
-	margin-top: 25px; 
-	padding-left: 20px;
+.formulario input{
+	border-radius: 30px;
+	border: 2px solid black;
+
+}
+.formulario div{
 	display: inline-block;
+	font-weight: bold;
 }
 
-.infoBlocos img {
-	width: auto;
-	height: auto;
-	display: inline-block;
-	border-radius: 5px;
-	border: 3px solid black;
-	margin-left: 17%;
+div#campousuario{
+	width: 30%;
 }
 
-.textLista {
-	color: #2E2E2E;
-	font-size: 0.8em;
-	text-align: center;
+#nome{
+	padding: 10px;
 }
 
- /*     
---------------------------------------------------------
-				FIM AREA PRINCIPAL 
---------------------------------------------------------
-*/
+div#camposenha{
+	width: 30%;
+}
+
+#senha{
+	padding: 10px;
+}
+
+div#campoemail{
+	width: 39%;
+}
+
+#email {
+	padding: 10px;
+	width: 50%;	
+}
+
+div#campocpf{
+	width: 33%;
+	margin-left: 0%;
+	margin-top: 1%;
+}
+
+#cpf {
+	padding: 10px;	
+}
+
+.btCadastro {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}

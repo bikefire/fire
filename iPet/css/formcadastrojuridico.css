@@ -113,54 +113,87 @@ a {
 --------------------------------------------------------
 */
 
-
- /*     
+/*     
 --------------------------------------------------------
-				INICIO AREA PRINCIPAL 
+				INICIO FORM JURIDICO   
 --------------------------------------------------------
 */
 
-#tudoAreaPrincipal {
-	height: auto;
-	width: auto;
-	display: block;
+p{
+	margin-top: 15px;
+	font-weight: bold;
 }
 
-.areaPrincipal {
-	width: auto;
-	height: auto;
-	margin-right: 3%; 
-	margin-left: 4%;
-	margin-bottom: 1%;
-	margin-top: 1%;	
+.info{
+	width:98.2%;
+	border: 2px solid black;
+	padding: 10px;
+	background-color: rgba(0,0,0,.1);
 }
+.formulario input{
+	border-radius: 30px;
+	border: 2px solid black;
 
-.infoBlocos {
-	width: 20%;
-	height: auto;
-	margin-left: 25px;
-	margin-top: 25px; 
-	padding-left: 20px;
+}
+.formulario div{
+	margin: 0;
 	display: inline-block;
+	font-weight: bold;
 }
 
-.infoBlocos img {
-	width: auto;
-	height: auto;
-	display: inline-block;
-	border-radius: 5px;
-	border: 3px solid black;
-	margin-left: 17%;
+div#camponomefantasia{
+	width: 30%;
 }
 
-.textLista {
-	color: #2E2E2E;
-	font-size: 0.8em;
-	text-align: center;
+#nome {
+	padding: 10px;
 }
 
- /*     
+div#campoemailjuridico{
+	width: 30%;
+}
+
+#email {
+	padding: 10px;
+}
+
+div#camposenhajuridico{
+	width: 39%;
+}
+
+#senha {
+	padding: 10px;
+}
+
+div#campocnpj{
+	width: 33%;
+}
+
+#cnpj {
+	padding: 10px;
+}
+
+div#botaodocjuridico {
+	margin-top: 15px;
+	margin-left: 80px;
+}
+
+.btCadastro {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/*     
 --------------------------------------------------------
-				FIM AREA PRINCIPAL 
+				FIM FORM JURIDICO   
 --------------------------------------------------------
 */

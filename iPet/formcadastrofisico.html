@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cadastro</title>
+	<title>Cadastro Fisico</title>
 		<meta charset="utf-8">
-			<link rel="stylesheet" type="text/css" href="css/formcadastro.css"> 
+			<link rel="stylesheet" type="text/css" href="css/formcadastrofisico.css"> 
 			<link rel="stylesheet" type="text/css" href="css/JanelaModal.css">
+			<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+			<script type="text/javascript" src="js/jquery.mask.min.js"></script>
 
 			<script type="text/javascript">
+
+				$(document).ready(function() {
+					$("#cpf").mask("000.000.000-00")
+			})
+
+				function validar(){
+
+			var nome = document.forms["formuser"]["nome"].value;
+			var email = document.forms["formuser"]["email"].value;
+			var senha = document.forms["formuser"]["senha"].value;
+
+
+			if (nome == "") {
+				alert('Preencha o campo nome.')
+                return false;
+			}
+			if (email == "" ) {
+				alert('Preencha o campo email.')
+                return false;
+			}
+			if (senha == "") {
+				alert('Preencha o campo senha.')
+                return false;
+			}
+		}
 
 			</script>
 </head>
@@ -23,11 +50,11 @@
 			<p>NOME:<p>
 			<input class="nome-texto" type="text"><br>
 			<p>SENHA:<p>
-			<input class="senha-texto" type="password">
+			<input class="senha-texto" type="text">
 			<nav class="botoes">
 				<ul type="disc">
 					<li class="linkum"><a href="#bg">ENTRAR</a></li>
-					<li class="linkum"><a href="formcadastro.html">FECHAR</a></li>
+					<li class="linkum"><a href="formcadastrofisico.html">FECHAR</a></li>
 				</ul>
 			</nav>	
 			</div>
@@ -84,25 +111,58 @@
 						MENU BAR - FIM 
 		--------------------------------------------------------
 	 -->
-	 <!-- 
-	 	--------------------------------------------------------
-						FORMS - INICIO 
-		--------------------------------------------------------
-	 -->
-	<div id="areaForm"> 
-		<div class="formulario">
-			<div id="opcaopessoa">
-				<h2> &darr; Clique no qual se adequa a você &darr; </h2> 
-					<br>
-				<a href="formcadastrofisico.html"> <h3 class="pFJ"> &#10155; Pessoa Fisica</h3> </a>
-					<br>
-			 	<a href="formcadastrojuridico.html"> <h3 class="pFJ"> &#10155; Pessoa Jurídica </h3> </a>
-			</div> 
+
+		<!-- 
+			--------------------------------------------------------
+							FORMFISICO - INICIO
+			--------------------------------------------------------
+		 -->
+		<div class="formulario" id="formpessoafisica">
+
+			<form name="formuser" id="formuser" method="post" onsubmit="return validar()">
+
+				<P>INFORMAÇÕES PESSOAIS:<P>
+
+				<div class="info">
+
+					<div id="campousuario">
+
+					<label>NOME DE USUARIO</label>	 
+						<input id="nome" type="text" name="nome" required>
+					</div>
+
+					<div id="camposenha"> 
+
+					<label>SENHA</label>	 
+						<input id="senha" type="password" name="senha" required>
+					</div>
+
+					<div id="campoemail"> 
+
+					<label>E-MAIL</label>	 
+						<input id="email" type="email" name="email" required>
+					</div>
+
+					<div id="campocpf"> 
+
+					<label>CPF</label> 
+						<input id="cpf" type="text" name="cpf" required>
+					</div>
+
+				</div>
+
+				<div >
+					<input class="btCadastro" type="submit" value="Cadastrar">
+  				</div>
+
+			</form>
+
 		</div>
-	 <!-- 
-	 	--------------------------------------------------------
-						FORMS - FIM
-		--------------------------------------------------------
-	 -->
+
+		<!-- 
+			--------------------------------------------------------
+							FORMFISICO - FIM
+			--------------------------------------------------------
+		 -->
 </body>
 </html>

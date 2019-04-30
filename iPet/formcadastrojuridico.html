@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cadastro</title>
+	<title>Cadastro Juridico</title>
 		<meta charset="utf-8">
-			<link rel="stylesheet" type="text/css" href="css/formcadastro.css"> 
+			<link rel="stylesheet" type="text/css" href="css/formcadastrojuridico.css"> 
 			<link rel="stylesheet" type="text/css" href="css/JanelaModal.css">
+			<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+			<script type="text/javascript" src="js/jquery.mask.min.js"></script>
 
-			<script type="text/javascript">
+	<script type="text/javascript">
 
-			</script>
+		$(document).ready(function() {
+
+		$("#cnpj").mask("00.000.000/0000-00")
+	})
+		function validar(){
+
+			var nome = document.forms["formuser"]["nome"].value;
+			var email = document.forms["formuser"]["email"].value;
+			var senha = document.forms["formuser"]["senha"].value;
+			var imei = document.forms["formuser"]["imei"].value;
+
+
+			if (nome == "") {
+				alert('Preencha o campo nome.')
+                return false;
+			}
+			if (email == "" ) {
+				alert('Preencha o campo email.')
+                return false;
+			}
+			if (senha == "") {
+				alert('Preencha o campo senha.')
+                return false;
+			}
+			if (imei == "") {
+				alert('Adcione o arquivo IMEI.')
+                return false;
+			}
+		}
+
+	</script>
+
+
 </head>
 <body onresize="console.log('evento disparado')">
 <!-- 
@@ -27,7 +61,7 @@
 			<nav class="botoes">
 				<ul type="disc">
 					<li class="linkum"><a href="#bg">ENTRAR</a></li>
-					<li class="linkum"><a href="formcadastro.html">FECHAR</a></li>
+					<li class="linkum"><a href="formcadastrojuridico.html">FECHAR</a></li>
 				</ul>
 			</nav>	
 			</div>
@@ -84,24 +118,59 @@
 						MENU BAR - FIM 
 		--------------------------------------------------------
 	 -->
-	 <!-- 
-	 	--------------------------------------------------------
-						FORMS - INICIO 
-		--------------------------------------------------------
-	 -->
-	<div id="areaForm"> 
-		<div class="formulario">
-			<div id="opcaopessoa">
-				<h2> &darr; Clique no qual se adequa a você &darr; </h2> 
-					<br>
-				<a href="formcadastrofisico.html"> <h3 class="pFJ"> &#10155; Pessoa Fisica</h3> </a>
-					<br>
-			 	<a href="formcadastrojuridico.html"> <h3 class="pFJ"> &#10155; Pessoa Jurídica </h3> </a>
-			</div> 
+
+		<!-- 
+			--------------------------------------------------------
+							FORMJURIDICO - INICIO
+			--------------------------------------------------------
+		 -->
+
+		<div class="formulario" id="formpessoajuridica">
+
+			<P>INFORMAÇÕES:<P>
+
+			<form name="formuser" id="formuser" method="post" onsubmit="return validar()">
+
+				<div class="info">
+
+					<div id="camponomefantasia"> 
+						<label>NOME FANTASIA</label>	
+							<input id="nome" type="text" name="nome" required>
+					</div>
+
+					<div id="campoemailjuridico"> 
+						<label>E-MAIL</label>	
+							<input id="email" type="email" name="email" required>
+					</div>
+
+					<div id="camposenhajuridico"> 
+						<label>SENHA</label>	
+							<input id="senha" type="password" name="senha" required>
+					</div>
+
+					<div id="campocnpjjuridico"> 
+						<label>CNPJ</label>
+							<input id="cnpj" type="text" name="cnpj" required>
+					</div>
+
+					<div id="botaodocjuridico"> 
+						<label>IMEI</label>	
+							<input id="imei" type="file" name="imei" required>
+					</div>
+
+				</div>
+
+				<div >
+					<input class="btCadastro" type="submit" value="Cadastrar">
+  				</div>
+
+			</form>
+
 		</div>
-	 <!-- 
+
+	<!-- 
 	 	--------------------------------------------------------
-						FORMS - FIM
+						FORMJURIDICO - FIM
 		--------------------------------------------------------
 	 -->
 </body>
